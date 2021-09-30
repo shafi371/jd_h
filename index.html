@@ -1,13 +1,36 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dasmoto's Arts & crafts</title>
+    <link rel="stylesheet" type="text/css" href="resource/index.css">
+  </head>
+  <body>
+<div class="content-wrapper">
+  <header>
+    <h1>Dasmoto's Arts & crafts</h1>
+  </header>
+  <div class="Brushes">
+    <h2 style="background-color:mediumspringgreen;">Brushes</h2>
+    <img src="./resource/hacksaw.webp">
+    <h3>hacksaw brushes</h3>
+    <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and ability to hold paint in large amounts. 
+      Available in different sizes.<a>Starting at $3.00 / brush.</a></p>
+  </div>
+  <div class="Frameset">
+    <h2 style="background-color:lightcoral;">Frameset</h2>
+    <img src="resource/frames.webp">
+    <h3>Art Frameset(assorted)</h3>
+    <p>Assorted frames made of different material, including MDF, birchwood, and PDE. 
+      Select frames can be sanded and painted according to your needs.<a>Starting at $2.00 / frame</a></p>
+  </div>
+  <div class="paint">
+    <h2 style="background-color:darkmagenta;">paint</h2>
+    <img src="./resource/finnish.jpeg">
+    <h3>Clean Finsh paint</h3>
+    <p>Imported paint from Finland. Over 256 colors available in-store, varying in quantity (1 oz. to 8 oz.). Clean Finnish paint microbinds to canvas,
+       increasing the finish and longevity of any artwork.<a>Starting at $5.00 / tube</a></p>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+  </div>
+    
+  </body>
+  </html>
